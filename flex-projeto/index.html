@@ -3,111 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Flex Turismos</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1>FlexTurismos</h1>
-        <ul>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <header class="collapse navbar-collapse margin container flex-container">
+            <h1 class="top-color">FlexTurismos</h1>
+            <ul class="navbar-nav">
+                <li class="nav-item top-item">
+                    <a class="top-color" href="#quem-somos">Quem Somos</a>
+                </li>
+                <li class="nav-item top-item">
+                    <a class="top-color" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item top-item">
+                    <a class="top-color" href="#planos">Planos</a>
+                </li>
+            </ul>
+        </header>
+    </nav>
 
-    <div>
-        <div>
-            <h1>Flex <br>Turismos</h1>
-            <p>O melhor serviço para você!</p>
-            <a href="">Saiba Mais!</a>
+    <section>
+        <div class="container-fluid flex-container">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-6 tur">
+                    <h4 class="top-body">Flex<br>Turismos</h4>
+                    <h5 class="text-color">O melhor serviço para você!</h5>
+                    <div class="bg-color">
+                        <a class="top-color" href="#">Saiba Mais!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 top-pic">
+                    <img src="./images/0-main.png" alt="viagens">
+                </div>
+            </div>
+            </div>
         </div>
+    </section>
 
-        <div>
-            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
-        </div>
-
-        <div>
-            <h2>Quem somos</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <h2>Serviços</h2>
-        </div>
-
-        <div>
-            <div>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
-                <p>Hospedagens</p>
-                <a href="#">Comprar Agora</a>
+    <div class="container-fluid flex-container">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
             </div>
 
-            <div>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
+            <div class="col-lg-6 text-color">
+                <h2 class="quemsomos">| Quem somos</h2>
+                <p class="body-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                <p class="body-text">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             </div>
-
-            <div>
-                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
-                <p>Roteiros personalizados</p>
-                <a href="#">Comprar Agora</a>
-            </div>
-
+        </div>
         </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid flex-container paddintbottom">
+                <div class="container">
+                <div class="row">
+                    <div>
+                        <h2 class="top-color servicos">Serviços</h2>
+                    </div>
+                        <div class="col-lg-4">
+                            <div class="icon"><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+                            <p class="top-color s-item">Pacotes de viagens</p>
+                            <a class="blue-color centralize" href="#">Comprar Agora</a>
+                        </div>
 
-    <div>
+                        <div class="col-lg-4">
+                            <div class="icon"><img src="./images/icon-2.png" alt="hospedagens"></div>
+                            <p class="top-color s-item">Hospedagens</p>
+                            <a class="blue-color centralize" href="#">Comprar Agora</a>
+                        </div>
 
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
+                        <div class="col-lg-4">
+                            <div class="icon"><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
+                            <p class="top-color s-item">Roteiros personalizados</p>
+                            <a class="blue-color centralize" href="#">Comprar Agora</a>
+                        </div>
+                </div>
+                </div>
         </div>
+    </nav>
+        <div class="container flex-container">
+        <div class="row">
+                <h1 class="planos">Planos</h1>
+                <div class="col-lg-3 plano-container">
+                    <h3 class="plano">Plano 1</h3>
+                    <ul>
+                        <li style="list-style-type: square">Suporte 24h</li>
+                        <li style="list-style-type: square">Serviços de quarto</li>
+                        <li style="list-style-type: square">Guia turístico</li>
+                    </ul>
+                    <a href="#">Saiba Mais!</a>
+                </div>
+            
+                <div class="col-lg-3 plano-container">
+                    <h3 class="plano">Plano 2</h3>
+                    <ul>
+                        <li class="align-text-bottom" style="list-style-type: square">Suporte 24h</li>
+                        <li style="list-style-type: square">Serviços de quarto</li>
+                        <li style="list-style-type: square">Guia turístico</li>
+                        <li style="list-style-type: square">Roteiro de trilhas</li>
+                        <li style="list-style-type: square">Serviço personalizado</li>
+                    </ul>
+                    <a href="#">Saiba Mais!</a>
+                </div>
 
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
+                <div class="col-lg-3 plano-container">
+                    <h3 class="plano">Plano 3</h3>
+                    <ul>
+                        <li style="list-style-type: square">Suporte 24h</li>
+                        <li style="list-style-type: square">Serviços de quarto</li>
+                        <li style="list-style-type: square">Guia turístico</li>
+                        <li style="list-style-type: square">Roteiro de trilhas</li>
+                        <li style="list-style-type: square">Serviço personalizado</li>
+                        <li style="list-style-type: square">Área Vip</li>
+                    </ul>
+                    <a href="#">Saiba Mais!</a>
+                </div>
         </div>
-
-        <div>
-            <h3>Plano 3</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-                <li>Área Vip</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
         </div>
-    </div>
-
     <footer>
         <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: Seu nome aqui dev</p>
+        <p>Desenvolvido por Fernanda Garcia</p>
     </footer>
 </body>
 </html>
